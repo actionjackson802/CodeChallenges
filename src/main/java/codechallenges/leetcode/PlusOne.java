@@ -22,7 +22,8 @@ public class PlusOne {
             }
             else if(t > 9){
                 digits[i] = t % 10;
-            }else{
+            }
+            else{
                 digits[i] = t;
                 return digits;
             }
@@ -30,4 +31,26 @@ public class PlusOne {
         }
         return digits;
     }
+
+    public static void main(String [] args){
+
+        int [] a = new int[]{4,3,3,2};
+        int [] b = new int[]{4,3,9,9};
+        PlusOne ps = new PlusOne();
+
+        a = ps.plusOne(a);
+        b = ps.plusOne(b);
+
+        for(int i = 0; i < a.length; i++){
+            System.out.print(a[i]);
+        }
+
+        System.out.println();
+        for(int i = 0; i < b.length; i++){
+            System.out.print(b[i]);
+        }
+
+
+    }
+
 }
