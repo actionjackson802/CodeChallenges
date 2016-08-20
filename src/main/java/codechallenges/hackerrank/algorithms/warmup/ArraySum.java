@@ -1,4 +1,4 @@
-package codechallenges.hackerrank;
+package codechallenges.hackerrank.algorithms.warmup;
 
 import java.util.Scanner;
 
